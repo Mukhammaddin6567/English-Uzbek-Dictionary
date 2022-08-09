@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="TextWord">
+        <item name="fontFamily">@font/buenard_bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="TextType" parent="TextWord">
+        <item name="android:layout_marginStart">@dimen/_4sdp</item>
+        <item name="fontFamily">@font/buenard</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="TextTranslate" parent="TextWord">
+        <item name="fontFamily">@font/buenard</item>
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="TextWordDialog" parent="TextWord">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:textColor">@color/color_status_bar</item>
+    </style>
+
+    <style name="TextAboutDialog" parent="TextWord">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/color_status_bar</item>
+    </style>
+
+    <style name="TextTypeDialog" parent="TextType">
+
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="TextTranscriptDialog" parent="TextTypeDialog">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextTranslateDialog" parent="TextTypeDialog">
+
+    </style>
+
+    <style name="TextToolbarTitle">
+        <item name="fontFamily">@font/buenard_bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+    <style name="TextLanguages">
+        <item name="fontFamily">@font/buenard</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="NavigationButton">
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:paddingStart">@dimen/_16sdp</item>
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawablePadding">@dimen/_16sdp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+</resources>

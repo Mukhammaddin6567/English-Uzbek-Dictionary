@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp"
+    android:elevation="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_4sdp">
+
+    <!--android:clickable="true"
+    android:focusable="true"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_word"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/text_word"
+            style="@style/TextWord"
+            android:fontFamily="@font/buenard_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Salom" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/is_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_star_off"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_type"
+            style="@style/TextType"
+            app:layout_constraintBottom_toBottomOf="@+id/text_translate"
+            app:layout_constraintStart_toEndOf="@id/text_translate"
+            app:layout_constraintTop_toTopOf="@+id/text_translate"
+            tools:text="(noun)" />
+
+        <TextView
+            android:id="@+id/text_translate"
+            style="@style/TextTranslate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_word"
+            tools:text="Salom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

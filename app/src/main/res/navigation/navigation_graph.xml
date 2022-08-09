@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashScreen">
+    <fragment
+        android:id="@+id/dictionaryScreen"
+        android:name="uz.gita.dictionaryAppMVVM.presenter.DictionaryScreen"
+        android:label="screen_dictionary"
+        tools:layout="@layout/screen_dictionary" >
+        <action
+            android:id="@+id/action_dictionaryScreen_to_favouriteScreen"
+            app:destination="@id/favouriteScreen"
+            app:enterAnim="@anim/anim_slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteScreen"
+        android:name="uz.gita.dictionaryAppMVVM.presenter.FavouriteScreen"
+        android:label="screen_favourite"
+        tools:layout="@layout/screen_favourite" />
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.dictionaryAppMVVM.presenter.SplashScreen"
+        android:label="screen_splash"
+        tools:layout="@layout/screen_splash" >
+        <action
+            android:id="@+id/action_splashScreen_to_dictionaryScreen"
+            app:destination="@id/dictionaryScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_loading_cat"
+        android:id="@+id/loadingCatScreen"
+        android:name="uz.gita.dictionaryAppMVVM.presenter.LoadingCatScreen"
+        android:label="LoadingCatScreen" />
+</navigation>

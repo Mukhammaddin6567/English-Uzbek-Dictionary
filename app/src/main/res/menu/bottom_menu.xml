@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        
+        android:icon="@drawable/ic_dictionary_book"
+        android:id="@+id/dictionaryScreen"
+        android:title="@string/text_dictionary" />
+
+    <item
+        android:icon="@drawable/ic_favourite_book"
+        android:id="@+id/favouriteScreen"
+        android:title="@string/text_favourite" />
+
+</menu>

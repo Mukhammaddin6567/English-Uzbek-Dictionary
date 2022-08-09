@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DictionaryApp</string>
+    <string name="text_english">English</string>
+    <string name="text_uzbek">Uzbek</string>
+    <string name="text_dictionary">Dictionary</string>
+    <string name="text_transcript">Transcript: [ %1$s ]</string>
+    <string name="text_translate">Translate: %1$s</string>
+    <string name="text_type">Part of speech: %1$s</string>
+    <string name="text_item_type">(%1$s)</string>
+    <string name="text_countable">Countable: %1$s</string>
+    <string name="text_ok">OK</string>
+    <string name="text_favourite">Favourite</string>
+    <string name="text_about">About</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="text_about_detailed">Over 14,000 words in English and Uzbek can be translated using this application, along with a brief description of each word.</string>
+</resources>
